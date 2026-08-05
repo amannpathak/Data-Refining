@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DARK BACKGROUND */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: rgb(12, 12, 12);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* GLOW EFFECT */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: purple;
+  filter: blur(200px);
+  top: -100px;
+  left: -100px;
+  opacity: 0.3;
+}
